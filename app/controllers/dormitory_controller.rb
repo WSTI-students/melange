@@ -1,3 +1,3 @@
 class DormitoryController < ApplicationController
-    def dormitory; end
+  def dormitory; end
 end
