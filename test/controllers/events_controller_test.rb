@@ -34,7 +34,8 @@ class EventsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update event" do
-    patch event_url(@event), params: { event: { description: @event.description, name: @event.name } }
+    patch event_url(@event), params: { event: { description: @event.description,
+    name: @event.name } }
     assert_redirected_to event_url(@event)
   end
 
