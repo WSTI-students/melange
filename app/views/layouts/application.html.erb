@@ -1,16 +1,68 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Melange</title>
+  <title>@ViewBag.Title | Melange</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- Mandatory Stylesheets -->
+  <link rel="stylesheet" href="css/base/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+  <!-- Plugin Stylesheets -->
+  <link rel="stylesheet" href="css/plugins/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/plugins/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/plugins/owl-carousel/owl.carousel.custom.css">
+  <link rel="stylesheet" href="css/plugins/devices/devices.min.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/simple-line-icons.css">
+  <link rel="stylesheet" href="css/plugins/magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="css/plugins/aos/aos.css">
+  <link rel="stylesheet" href="css/plugins/loaders-css/loaders.min.css">
+
+  <!-- Template Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/themes/theme-light-blue.css">
+  <link rel="stylesheet" href="css/custom.css">
 
 </head>
 
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
-  </body>
+<body>
+  <p class="notice">
+    <%= notice %>
+  </p>
+  <p class="alert">
+    <%= alert %>
+  </p>
+  <%= yield %>
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+
+  <!-- Bootstrap Plugins -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Template Plugins -->
+  <script src="js/plugins/classie/classie.js"></script>
+  <script src="js/plugins/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/plugins/isotope/isotope.pkgd.min.js"></script>
+  <script src="js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="js/plugins/modernizr/modernizr-custom.js"></script>
+  <script src="js/plugins/aos/aos.js"></script>
+  <script src="js/plugins/jquery-validate/jquery.validate.min.js"></script>
+  <script src="js/plugins/loaders-css/loaders.css.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+
+</body>
+
 </html>
