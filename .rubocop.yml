@@ -5,6 +5,7 @@ AllCops:
   Exclude:
     - db/**/*
     - config/**/*
+    - app/controllers/sessions_controller.rb
 Style/StringLiterals:
   Enabled: false
 Style/FrozenStringLiteralComment:

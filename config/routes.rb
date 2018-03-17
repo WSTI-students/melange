@@ -12,4 +12,8 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'sessions#destroy'
 
   get "/dormitory", to: "dormitory#dormitory"
+  get "/users", to: "users#index"
+  get "/contact", to: "static_pages#contact"
+  get "/about", to: "static_pages#about"
+  get "/statistics", to: "static_pages#statistics"
 end
