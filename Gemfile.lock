@@ -40,9 +40,15 @@ GEM
       tzinfo (~> 1.1)
     arel (7.1.4)
     ast (2.4.0)
+    autoprefixer-rails (8.1.0.1)
+      execjs
     bcrypt (3.1.11)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
+    bootstrap (4.0.0)
+      autoprefixer-rails (>= 6.0.3)
+      popper_js (>= 1.12.9, < 2)
+      sass (>= 3.5.2)
     builder (3.2.3)
     byebug (10.0.0)
     coffee-rails (4.1.1)
@@ -92,6 +98,7 @@ GEM
     parallel (1.12.1)
     parser (2.5.0.3)
       ast (~> 2.4.0)
+    popper_js (1.12.9)
     powerpack (0.1.1)
     rack (2.0.4)
     rack-test (0.6.3)
@@ -187,6 +194,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap
   byebug
   coffee-rails (~> 4.1.0)
   devise (~> 4.4.1)
