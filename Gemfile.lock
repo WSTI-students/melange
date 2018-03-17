@@ -202,10 +202,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   devise (~> 4.4.1)
-<<<<<<< HEAD
   haml
-=======
->>>>>>> master
   jquery-rails
   rails (= 5.0.2)
   rubocop
