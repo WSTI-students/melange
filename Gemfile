@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
+gem 'bootstrap'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'devise', '~> 4.4.1'
+gem 'haml'
 gem 'jquery-rails'
 gem 'rails', '5.0.2'
 gem 'sass-rails', '~> 5.0'
