@@ -1,0 +1,7 @@
+<h1><%= @user.name%> profile</h1>
+ 
+ <%= @user.name %>, <%= @user.email %>
+ <%= @user.created_at %>, <%= @user.updated_at %>
+ <%= Time.now %>
+ <br>
+ <%= link_to "Log out", logout_path %></p>
