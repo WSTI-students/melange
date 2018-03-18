@@ -5,41 +5,24 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
 
-    %meta{:charset => "utf-8"}/
-    %meta{:content => "", :name => "description"}/
-    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "", name: "description"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
     %title Melange
     / Place favicon.ico in the root directory
-    %link{:href => "public/favicon.ico", :rel => "shortcut icon"}/
-    / Mandatory Stylesheets
-    %link{:href => "css/base/bootstrap.css", :rel => "stylesheet"}/
-    %link{:href => "https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800", :rel => "stylesheet"}/
-    / Plugin Stylesheets
-    %link{:href => "css/plugins/owl-carousel/owl.carousel.min.css", :rel => "stylesheet"}/
-    %link{:href => "css/plugins/owl-carousel/owl.theme.default.min.css", :rel => "stylesheet"}/
-    %link{:href => "css/plugins/owl-carousel/owl.carousel.custom.css", :rel => "stylesheet"}/
-    %link{:href => "css/plugins/devices/devices.min.css", :rel => "stylesheet"}/
-    %link{:href => "css/font-awesome.css", :rel => "stylesheet"}/
-    %link{:href => "css/simple-line-icons.css", :rel => "stylesheet"}/
-    %link{:href => "css/plugins/magnific-popup/magnific-popup.css", :rel => "stylesheet"}/
-    %link{:href => "css/plugins/aos/aos.css", :rel => "stylesheet"}/
-    %link{:href => "css/plugins/loaders-css/loaders.min.css", :rel => "stylesheet"}/
-    / Template Stylesheets
-    %link{:href => "css/main.css", :rel => "stylesheet"}/
-    %link{:href => "css/themes/theme-light-blue.css", :rel => "stylesheet"}/
-    %link{:href => "css/custom.css", :rel => "stylesheet"}/
+    %link{ href: "public/favicon.ico", rel: "shortcut icon"}/
 
-    
     / Menu
     %header.tp--header.tp--header-fixed.tp--header-shrink.tp--header-1
       %nav.navbar-wrapper
         .container.clearfix
           %h1.logo
             = image_tag 'menu/logo.png', class: 'logo-left tp--scroll'
-            %a.tp--scroll{:href => "#intro"}
-              %img.logo-main{:alt => "Melange", :src => "images/logo.png"}/
-              %img.logo-dark{:alt => "Melange", :src => "images/logo.png"}/
+            %a.tp--scroll{ href: "#intro" }
+              %img.logo-main{ alt: "Melange", src: "images/logo.png" }/
+              %img.logo-dark{ alt: "Melange", src: "images/logo.png" }/
             
           = render "shared/nav"
+
   %body
     = yield 
