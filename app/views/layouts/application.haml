@@ -1,0 +1,28 @@
+!!!
+%html
+  %head
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+    %meta{charset: "utf-8"}/
+    %meta{content: "", name: "description"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %title Melange
+    / Place favicon.ico in the root directory
+    %link{ href: "public/favicon.ico", rel: "shortcut icon"}/
+
+    / Menu
+    %header.tp--header.tp--header-fixed.tp--header-shrink.tp--header-1
+      %nav.navbar-wrapper
+        .container.clearfix
+          %h1.logo
+            = image_tag 'menu/logo.png', class: 'logo-left tp--scroll'
+            %a.tp--scroll{ href: "#intro" }
+              %img.logo-main{ alt: "Melange", src: "images/logo.png" }/
+              %img.logo-dark{ alt: "Melange", src: "images/logo.png" }/
+            
+          = render "shared/nav"
+
+  %body
+    = yield 

@@ -109,6 +109,60 @@ body {
   color: #7d8a93;
 }
 
+.margin-button {
+  margin-top: 38px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background: darkorange;
+  color: black;
+}
+
+.back-img {
+  background: url('home/home-01.jpeg')
+}
+
+.back-img-foo {
+  background: url('home/home-09.jpeg')
+}
+
+.margin-button:hover {
+  background: darkgoldenrod;
+  color: black;
+}
+
+.margin-button:focus {
+  background: darkorange;
+  color: black;
+}
+
+.margin-top {
+  margin-top: 25px;
+}
+
+.sing-in {
+  margin-top: 28px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  background: lightgreen;
+  color: black;
+}
+
+.sing-in:hover {
+  background: darkgreen;
+  color: white;
+}
+
+.sing-in:focus {
+  background: lightgreen;
+  color: black;
+}
+
 ul, ol {
   margin-bottom: 2em;
 }
@@ -266,6 +320,39 @@ blockquote.blockquote-large {
 
 .tp--preloader .tp--spinner .loader-inner div {
   background-color: black;
+}
+
+#custom-search-input{
+  padding: 3px;
+  border: solid 1px #E4E4E4;
+  border-radius: 6px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#custom-search-input input{
+  border: 0;
+  box-shadow: none;
+}
+
+#custom-search-input button{
+  margin: 2px 0 0 0;
+  background: none;
+  box-shadow: none;
+  border: 0;
+  color: #666666;
+  padding: 0 8px 0 10px;
+  border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+  border: 0;
+  box-shadow: none;
+  border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+  font-size: 23px;
 }
 
 .browserupgrade {
@@ -3256,6 +3343,10 @@ blockquote.blockquote-large {
 .tp--pinterest {
   background: #c8232c !important;
   color: white !important;
+}
+
+.mar-bot-foo {
+  margin-bottom: 25px;
 }
 
 .tp--pinterest:hover {

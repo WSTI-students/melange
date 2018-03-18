@@ -6,6 +6,7 @@ AllCops:
     - db/**/*
     - config/**/*
     - app/controllers/sessions_controller.rb
+    - app/models/event.rb
 Style/StringLiterals:
   Enabled: false
 Style/FrozenStringLiteralComment:
