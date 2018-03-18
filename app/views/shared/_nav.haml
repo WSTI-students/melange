@@ -1,12 +1,19 @@
-= image_tag "logo.png"
-
-= link_to "Strona główna", root_path
-= link_to "Użytkownicy", users_path 
-= link_to "Wydarzenia", events_path 
-= link_to "Statystyki", statistics_path 
-= link_to "O platformie", about_path 
-= link_to "Kontakt", contact_path 
-- if current_user 
-    = link_to "Wyloguj", destroy_user_session_path, method: :delete 
-- else 
-= link_to "Zaloguj", new_user_session_path 
+.navbar.pull-right
+    .navbar-collapse.collapse
+        %ul.nav.navbar-nav
+            %li
+                %button.tp--scroll.margin-button{:href => "#intro"} Domówka
+            %li
+                %button.tp--scroll.margin-button{:href => "#about"} Melanżowcy
+            %li
+                %button.tp--scroll.margin-button{:href => "#projects"} Gdzie?
+            %li
+                %button.tp--scroll.margin-button{:href => "#team"} Staty
+            %li
+                %button.tp--scroll.margin-button{:href => "#team"} O co kaman?
+            %li
+                %button.tp--scroll.margin-button{:href => "#team"} Kontakt
+            %li.tp--nav-divider
+                %a
+            %li.tp--nav-signup
+                %button.sing-in Cho z nami!
