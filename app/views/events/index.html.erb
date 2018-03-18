@@ -22,8 +22,8 @@
         <td><%= event.owner_id %></td>
         <td><%= event.users.count %></td>
         <td><% event.users.each do |user| %>
-          <%= "#{user.email}" %><br/>
-          <% end %>
+        <%= "#{user.email}" %><br/>
+        <% end %>
         </td>
         <td><%= link_to 'Show', event %></td>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>

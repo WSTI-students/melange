@@ -10,12 +10,11 @@
   <%= @event.description %>
 </p>
 
-
 <p>
   <strong>Uczestnicy:</strong>
   <ul><% @event.users.each do |user| %>
-  <li><%= "#{user.email}" %></li>
-   <% end %>
+    <li><%= "#{user.email}" %></li>
+    <% end %>
   </ul>
 </p>
 

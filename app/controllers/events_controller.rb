@@ -23,7 +23,7 @@ class EventsController < ApplicationController
   # POST /events.json
   def create
     @event = Event.new(event_params)
-    @event.owner_id = current_user.id;
+    @event.owner_id = current_user.id
 
     respond_to do |format|
       if @event.save
@@ -63,8 +63,8 @@ class EventsController < ApplicationController
   def join
     respond_to do |format|
       if current_user
-       @event.users << current_user
-       format.html { redirect_to events_url, notice: 'Gratulacje, dołączyłeś do wydarzenia!' }
+        @event.users << current_user
+        format.html { redirect_to events_url, notice: 'Gratulacje, dołączyłeś do wydarzenia!' }
       else
         format.html { redirect_to user_sign_in, notice: 'Zaloguj się, aby dołączyć do wydarzenia.' }
       end
