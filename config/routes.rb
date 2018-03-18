@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
+
   resources :events
+  get "events/:id/join", to: "events#join", as: "join_event"
+
   resources :users
 
   root to: "static_pages#index"
