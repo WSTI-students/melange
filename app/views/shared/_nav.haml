@@ -6,7 +6,8 @@
 = link_to "Statystyki", statistics_path 
 = link_to "O platformie", about_path 
 = link_to "Kontakt", contact_path 
-- if current_user 
-    = link_to "Wyloguj", destroy_user_session_path, method: :delete 
+- if current_user
+  = link_to "Wyloguj", destroy_user_session_path, method: :delete 
+  Twój ID: #{current_user.id}
 - else 
-= link_to "Zaloguj", new_user_session_path 
+  = link_to "Zaloguj", new_user_session_path 
