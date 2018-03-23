@@ -2,14 +2,18 @@
     .navbar-collapse.collapse
         %ul.nav.navbar-nav
             %li
-                %button.tp--scroll.margin-button{ href: "#intro" } Domówka
+                %a.tp--scroll.margin-button{ href: "index" } Domówka
             %li
-                %button.tp--scroll.margin-button{ href: "#about" } Melanżowcy
+                %a.tp--scroll.margin-button{ href: "users" } Melanżowcy
             %li
-                %button.tp--scroll.margin-button{ href: "#projects" } Gdzie?
+                %a.tp--scroll.margin-button{ href: "events" } Gdzie?
             %li
-                %button.tp--scroll.margin-button{ href: "#team" } Staty
+                %a.tp--scroll.margin-button{ href: "statistics" } Staty
             %li
-                %button.tp--scroll.margin-button{ href: "#team" } O co kaman?
+                %a.tp--scroll.margin-button{ href: "about" } O co kaman?
             %li
-                %button.tp--scroll.margin-button{ href: "#team" } Kontakt
+                %a.tp--scroll.margin-button{ href: "contact" } Kontakt
+            %li.tp--nav-divider
+                %a
+            %li.tp--nav-signup
+                %a.sing-in{ :href => "login" } Cho z nami!

@@ -109,10 +109,15 @@ body {
   color: #7d8a93;
 }
 
-.margin-button {
-  margin-top: 38px;
-  margin-left: 5px;
-  margin-right: 5px;
+.back-img {
+  background: url('home/home-01.jpeg')
+}
+
+.back-img-foo {
+  background: url('home/home-09.jpeg')
+}
+
+.link-button {
   width: 100px;
   height: 30px;
   border-radius: 10px;
@@ -120,12 +125,16 @@ body {
   color: black;
 }
 
-.back-img {
-  background: url('home/home-01.jpeg')
-}
-
-.back-img-foo {
-  background: url('home/home-09.jpeg')
+.margin-button {
+  margin-top: 28px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 120px;
+  height: 50px;
+  border-radius: 20px;
+  background: darkorange;
+  color: black;
+  text-align: center;
 }
 
 .margin-button:hover {
