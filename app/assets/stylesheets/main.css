@@ -109,6 +109,22 @@ body {
   color: #7d8a93;
 }
 
+.back-img {
+  background: url('home/home-01.jpeg')
+}
+
+.back-img-foo {
+  background: url('home/home-09.jpeg')
+}
+
+.link-button {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background: darkorange;
+  color: black;
+}
+
 .margin-button {
   margin-top: 38px;
   margin-left: 5px;
@@ -118,14 +134,6 @@ body {
   border-radius: 10px;
   background: darkorange;
   color: black;
-}
-
-.back-img {
-  background: url('home/home-01.jpeg')
-}
-
-.back-img-foo {
-  background: url('home/home-09.jpeg')
 }
 
 .margin-button:hover {
