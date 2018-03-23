@@ -12,17 +12,13 @@
     / Place favicon.ico in the root directory
     %link{ href: "public/favicon.ico", rel: "shortcut icon"}/
 
-    / Menu
-    %header.tp--header.tp--header-fixed.tp--header-shrink.tp--header-1
-      %nav.navbar-wrapper
-        .container.clearfix
-          %h1.logo
-            = image_tag 'menu/logo.png', class: 'logo-left tp--scroll'
-            %a.tp--scroll{ href: "#intro" }
-              %img.logo-main{ alt: "Melange", src: "images/logo.png" }/
-              %img.logo-dark{ alt: "Melange", src: "images/logo.png" }/
-            
-          = render "shared/nav"
-
   %body
+    / Menu
+
+    %h2.logo
+      = image_tag 'menu/logo.png', class: 'logo-left tp--scroll'
+      %a.tp--scroll{ href: "#intro" }
+        %img.logo-main{ alt: "Melange", src: "images/logo.png" }/
+
+      = render "shared/nav"
     = yield 

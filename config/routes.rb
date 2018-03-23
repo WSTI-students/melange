@@ -19,4 +19,5 @@ Rails.application.routes.draw do
   get "/contact", to: "static_pages#contact"
   get "/about", to: "static_pages#about"
   get "/statistics", to: "static_pages#statistics"
+  get "/index", to: "static_pages#index"
 end
