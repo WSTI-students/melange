@@ -22,3 +22,23 @@
 
       = render "shared/nav"
     = yield 
+
+  %footer#footer.tp--footer.tp--footer-1.text-xs-center
+    .container.back-img-foo
+      .row
+        .col-sm-3
+          .footer-text
+            %p 
+              %b Platforma jest zrealizowana w ramach warsztatów i pasji studentów lubiących się napić ;)
+        .col-sm-2.col-sm-offset-1.m-top-sm-40
+          
+        .col-sm-2.m-top-sm-40
+          
+        .col-sm-3.col-sm-offset-1
+          %h3 Znajedziesz nas na: WSTI Katowice 
+          by MelangeTeam
+      .row.tp--social
+        .col-lg-12.text-center.mar-bot-foo
+          = image_tag 'home/fb.png', height: '30', width: '30'
+          = image_tag 'home/insta.png', height: '30', width: '30'
+          = image_tag 'home/twitter.png', height: '30', width: '30'
