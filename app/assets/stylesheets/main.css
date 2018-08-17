@@ -6426,7 +6426,17 @@ blockquote.blockquote-large {
   .p-right-lg-50 {
     padding-right: 50px;
   }
-  .p-right-lg-60 {
+  .p-right-lg-60 {.margin-button {
+    margin-top: 28px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    background: darkorange;
+    color: black;
+    text-align: center;
+  }
     padding-right: 60px;
   }
   .p-right-lg-70 {
@@ -6451,7 +6461,17 @@ blockquote.blockquote-large {
     padding-right: 130px;
   }
   .p-right-lg-140 {
-    padding-right: 140px;
+    padding-right: 140px;.margin-button {
+      margin-top: 28px;
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 120px;
+      height: 50px;
+      border-radius: 20px;
+      background: darkorange;
+      color: black;
+      text-align: center;
+    }
   }
   .p-right-lg-150 {
     padding-right: 150px;
@@ -6471,4 +6491,46 @@ blockquote.blockquote-large {
   .p-right-lg-200 {
     padding-right: 200px;
   }
+}
+.margin-button {
+  margin-top: 28px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 120px;
+  height: 50px;
+  border-radius: 20px;
+  background: darkorange;
+  color: black;
+  text-align: center;
+}
+
+.input-label {
+  width: 250px;
+  height: 40px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: silver;
+  color: black;
+  text-align: center;
+}
+
+.log-img {
+  background: url('sing_in/logging.jpg')
+}
+
+.log-button {
+  margin-top: 28px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background: seagreen;
+  color: black;
+  text-align: center;
+}
+
+.color-link {
+  color: yellow !important;
+  font-weight: bold !important;
 }

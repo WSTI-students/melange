@@ -1,14 +1,24 @@
-<% provide(:title, "Log in") %>
-<h1>Log in</h1>
+<section id="intro" class="tp--intro tp--intro-dark tp--slider-single tp--owl-carousel-single owl-carousel owl-theme tp--intro-height-100" data-carousel-options='{ "items": "1", "nav": true, "mouseDrag": false, "touchDrag": false, "responsive": { "0": { "items":"1" } } }'>
+  <div class="item tp--intro-content-center text-sm-center tp--with-image-light log-img">
+    <div class="container">
+        <div class="col-sm-12">
+        <div align="center">
+          <% provide(:title, "Log in") %>
+          <h1>Panel logowania</h1>
 
-    <%= form_for(:session, url: login_path) do |f| %>
-      <%= f.label :email %>
-      <%= f.email_field :email %>
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-      <%= f.submit "Log in"%>
-    <% end %>
+              <%= form_for(:session, url: login_path) do |f| %>
+                <%= f.label :email %>
+                <%= f.email_field :email, :class => 'input-label' %>
+                <%= f.label :hasło %>
+                <%= f.password_field :password, :class => 'input-label' %> <br />
+                <%= f.submit "Zaloguj się", :class => 'log-button'%>
+              <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+              <p>Nowy? <%= link_to "Zarejestruj się!", signup_path, :class => 'color-link' %></p>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
   </div>
-</div>
+</section>
